@@ -1,4 +1,4 @@
-<p align="center"><b>📱🗑️ AppSweeper</b></p>
+<p align="center"><b>🧹📱 AppSweeper</b></p>
 <h1 align="center">AppSweeper</h1>
 <p align="center">Elimina apps de tu iPhone o iPad <b>en masa</b> desde tu Mac — sin jailbreak.<br>
 <a href="https://github.com/remasterzerouvm/appsweeper/releases/latest"><b>⬇️ Descargar la última versión</b></a> · <a href="#english">English</a></p>
@@ -23,6 +23,7 @@
 - ☑️ **Selección múltiple** con casillas y desinstalación masiva.
 - 📊 **Gráfica de almacenamiento** usado / libre, mostrando cuánto espacio liberarías con la selección actual.
 - 🌐 Interfaz en **español e inglés** (sigue el idioma de macOS).
+- ℹ️ Ventana **Acerca de AppSweeper** con créditos y enlace de donación.
 
 ### 🧰 Requisitos
 
@@ -35,7 +36,7 @@
 
 ### 📦 Instalación
 
-1. Descarga `AppSweeper-v1.0.0-macOS.zip` desde [Releases](https://github.com/remasterzerouvm/appsweeper/releases/latest).
+1. Descarga `AppSweeper-v1.0.1-macOS.zip` desde [Releases](https://github.com/remasterzerouvm/appsweeper/releases/latest).
 2. Descomprímelo y arrastra **AppSweeper.app** a tu carpeta **Aplicaciones**.
 3. La app está firmada ad-hoc (no notarizada por Apple), así que la primera vez macOS mostrará un aviso. Para abrirla:
    - **Clic derecho** (o Control+clic) sobre la app → **Abrir** → **Abrir**, o
@@ -75,7 +76,7 @@ Este software se ofrece "tal cual", sin garantías. Desinstalar apps borra sus d
 
 ### 💖 Donaciones
 
-Si te resulta útil y quieres apoyar, puedes donar en **remaster@pm.me**.
+Si te resulta útil y quieres apoyar, puedes donar por PayPal: [paypal.me/remasterzero](https://paypal.me/remasterzero) 💖
 
 ---
 
@@ -93,6 +94,8 @@ Si te resulta útil y quieres apoyar, puedes donar en **remaster@pm.me**.
 **Usage:** connect via USB, unlock and tap **Trust**, select apps, uninstall.
 
 **Build:** `./build.sh` (Xcode Command Line Tools only).
+
+**Donate:** [paypal.me/remasterzero](https://paypal.me/remasterzero) 💖
 
 **Disclaimer:** provided as-is, no warranty. Uninstalling an app deletes its data. Not affiliated with Apple. App icons are fetched from the public iTunes Search API using bundle IDs.
 

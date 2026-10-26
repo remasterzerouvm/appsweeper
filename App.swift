@@ -258,7 +258,21 @@ final class Delegate: NSObject, NSApplicationDelegate {
     func applicationShouldTerminateAfterLastWindowClosed(_ app: NSApplication) -> Bool { true }
 }
 
-@main struct AppSweeperApp: App {
+func showAbout() {
+    let c = NSMutableAttributedString(
+        string: "Emanuel Avalos\n" + String(localized: "From México with love") + " ♥\n\n" + String(localized: "Donate") + ": ",
+        attributes: [.font: NSFont.systemFont(ofSize: 12), .foregroundColor: NSColor.labelColor])
+    c.append(NSAttributedString(string: "PayPal", attributes: [.link: URL(string: "https://paypal.me/remasterzero")!, .font: NSFont.systemFont(ofSize: 12)]))
+    let center = NSMutableParagraphStyle(); center.alignment = .center
+    c.addAttribute(.paragraphStyle, value: center, range: NSRange(location: 0, length: c.length))
+    NSApp.orderFrontStandardAboutPanel(options: [.credits: c])
+    NSApp.activate(ignoringOtherApps: true)
+}
+
+@main struct AppSweeper: App {
     @NSApplicationDelegateAdaptor(Delegate.self) var delegate
-    var body: some Scene { WindowGroup("AppSweeper") { ContentView() } }
+    var body: some Scene {
+        WindowGroup("AppSweeper") { ContentView() }
+            .commands { CommandGroup(replacing: .appInfo) { Button("About AppSweeper") { showAbout() } } }
+    }
 }
