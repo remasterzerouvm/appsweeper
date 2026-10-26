@@ -37,7 +37,7 @@ struct Disk { var capacity: Double = 0, available: Double = 0 }
 func fmt(_ b: Double) -> String { ByteCountFormatter.string(fromByteCount: Int64(b), countStyle: .file) }
 
 let cacheDir: URL = {
-    let d = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)[0].appendingPathComponent("IDeviceApps")
+    let d = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)[0].appendingPathComponent("AppSweeper")
     try? FileManager.default.createDirectory(at: d, withIntermediateDirectories: true)
     return d
 }()
@@ -258,7 +258,7 @@ final class Delegate: NSObject, NSApplicationDelegate {
     func applicationShouldTerminateAfterLastWindowClosed(_ app: NSApplication) -> Bool { true }
 }
 
-@main struct IDeviceApps: App {
+@main struct AppSweeperApp: App {
     @NSApplicationDelegateAdaptor(Delegate.self) var delegate
-    var body: some Scene { WindowGroup("iDevice Apps") { ContentView() } }
+    var body: some Scene { WindowGroup("AppSweeper") { ContentView() } }
 }
