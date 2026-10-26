@@ -10,6 +10,8 @@
 <img src="https://img.shields.io/badge/license-MIT-green" alt="MIT">
 </p>
 
+<p align="center"><img src="screenshots/seleccion.png" alt="AppSweeper" width="760"></p>
+
 ---
 
 ## 🇪🇸 Español
@@ -24,6 +26,13 @@
 - 📊 **Gráfica de almacenamiento** usado / libre, mostrando cuánto espacio liberarías con la selección actual.
 - 🌐 Interfaz en **español e inglés** (sigue el idioma de macOS).
 - ℹ️ Ventana **Acerca de AppSweeper** con créditos y enlace de donación.
+
+### 📸 Capturas / Screenshots
+
+| Lista de apps / App list | Selección y espacio a liberar / Selection & space to free | Acerca de / About |
+|:---:|:---:|:---:|
+| <img src="screenshots/lista.png" width="300"> | <img src="screenshots/seleccion.png" width="300"> | <img src="screenshots/acerca.png" width="200"> |
+| Todas tus apps con icono, versión y tamaño. / All your apps with icon, version and size. | Marca varias y ve cuánto espacio liberarás. / Pick several and see how much space you'll free. | Créditos y donación. / Credits and donation. |
 
 ### 🧰 Requisitos
 
